@@ -79,7 +79,7 @@
   }
   
   h1 .bordertitle {
-    color: #66239a;
+    color: #4e2493;
   }
   
   .releases {
@@ -151,4 +151,9 @@
   font {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .borderbg{
+      background: url(border.png);
+      filter: blur(3px) brightness(0.4)
   }
