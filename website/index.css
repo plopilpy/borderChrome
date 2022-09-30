@@ -38,7 +38,6 @@ height: 100%;
         left: 0;
         top: 0;
         content: '';
-        z-index: -1;
         background: url(src2-2.png);
         background-repeat: no-repeat;
         animation-name: chromebg;
