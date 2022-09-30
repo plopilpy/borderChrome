@@ -19,14 +19,11 @@ height: 100%;
 }
 
     body{
-      background: url(src1.png);
-      background-size: 123% 123%;
-      background-position-y: -19%;
+      background: url(src1-2.png);
       height: 100%;
       width: 100%;
       margin: 0;
       margin-top: -20px;
-      background-position-x: 14%;
     }
     
 .container{
@@ -38,9 +35,11 @@ height: 100%;
 
     .container2 {
         position: absolute;
+        left: 0;
+        top: 0;
         content: '';
         z-index: -1;
-        background: url(src2.png);
+        background: url(src2-2.png);
         background-repeat: no-repeat;
         animation-name: chromebg;
         animation-duration: 3s;
@@ -81,3 +80,8 @@ background-position: 0 -45px;
     z-index: 100;
     background-size: 100%;
 }*/
+
+font{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
