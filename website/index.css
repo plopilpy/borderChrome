@@ -88,6 +88,9 @@
     border-radius: 5px;
     width: 30%;
     overflow: hidden;
+    z-index: 5;
+    position: relative;
+    cursor: pointer;
   }
   
   .relcontainer {
@@ -97,6 +100,7 @@
   
   .relbg {
     background: url(rels.png);
+    background-position: 0 50%;
     width: inherit;
     position: absolute;
     filter: blur(3px);
@@ -148,4 +152,3 @@
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
