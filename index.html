@@ -3,43 +3,82 @@
 <head>
   <link rel="stylesheet" href="./website/index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="./website/compare.js"></script>
+  <script src="https://code.jquery.com/color/jquery.color-2.2.0.min.js" integrity="sha256-aSe2ZC5QeunlL/w/7PsVKmV+fa0eDbmybn/ptsKHR6I=" crossorigin="anonymous"></script>
   <script>
       $( document ).ready(function() {
         $('.githublogo').html(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24" style="fill: white;margin-right: 3px;"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>`);
         $('.borderlogo').html(`<svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 164" height="24" style="fill: white;margin-right: 3px;"><path fill-rule="evenodd" clip-rule="evenodd" d="M59.0108 138.905H92C117.405 138.905 138 118.311 138 92.9054C138 67.5003 117.405 46.9054 92 46.9054C92 21.5003 71.4051 0.905396 46 0.905396H0V138.905H32.9892L21.0946 150.8L34.1054 163.811L59.0108 138.905ZM73.6 50.733V46.9054C73.6 31.6623 61.2431 19.3054 46 19.3054H18.4V120.505H51.3892L53.6213 118.273C48.8049 111.001 46 102.281 46 92.9054C46 74.0425 57.3537 57.8313 73.6 50.733ZM119.6 92.9054C119.6 108.148 107.243 120.505 92 120.505C76.7569 120.505 64.4 108.148 64.4 92.9054C64.4 77.6623 76.7569 65.3054 92 65.3054C107.243 65.3054 119.6 77.6623 119.6 92.9054Z"></path></svg>`)
         $('.ninesixlogo').html(`<svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" viewBox="0 0 41.316 32.036" style="fill: white;margin-right: 3px;"><path d="M10.546 30.497v-1.539h1.463 1.463v1.539 1.539h-1.463-1.463zm-2.498 1.089l-1.35-.324-.139-.035v-1.538l.069-1.538c.038 0 .645.136 1.35.302l1.394.329.114.027v1.538 1.538l-.114-.005c-.062-.002-.658-.135-1.325-.294zm6.484-1.24v-1.538l.114-.027 1.394-.329 1.299-.302c.01 0 .018-2.078.018-4.617l-.025-4.617c-.013 0-.604.136-1.313.303l-1.388.303c-.098 0-.1-.037-.1-1.539l.038-1.54c.021-.001.651-.145 1.4-.321l1.362-.32.013-4.624-.012-4.624c-.014 0-.604.136-1.313.303l-1.388.303c-.098 0-.1-.037-.1-1.535V4.09l.164-.035 1.402-.328c1.053-.249 1.39-.354 2.263-.703l1.866-.79C22.399 1.25 24.333.593 26.062.252c1.243-.245 1.557-.267 3.557-.245l2.576.154c2.436.445 4.421 1.141 8.071 2.829l1.034.479.013 13.905-.035 13.905c-.026 0-.77-.343-1.653-.763-4.661-2.216-7.006-2.956-9.829-3.099-2.302-.117-5.089.578-8.401 2.095-.375.172-1.418.63-2.318 1.018l-1.637.706-1.378.324-1.454.324c-.066 0-.076-.205-.076-1.538zm6.247-3.614c2.547-1.114 4.903-1.802 6.809-1.99l.366-.036V19.94v-4.767l-.265.034c-2.008.254-4.463 1.035-6.862 2.183l-.694.332v4.634l.028 4.634c.015 0 .294-.116.618-.258zm17.822-4.408v-4.616l-.189-.096c-.401-.204-2.099-.918-2.866-1.205-1.607-.602-2.913-.942-4.602-1.199l-.214-.033v4.766 4.766l.366.035c.61.059 1.782.27 2.558.462 1.273.314 3.367 1.045 4.594 1.604.153.07.295.128.315.129s.038-2.074.038-4.613zm-17.583-8.066c2.237-.961 4.41-1.574 6.394-1.802l.542-.063V7.582 2.77h-.121c-.234 0-1.323.205-1.998.376-1.289.326-2.705.842-4.339 1.58l-1.097.484-.265.108v4.66l.063 4.633.822-.353zm17.571-4.303l-.013-4.673-.813-.368c-1.788-.81-3.493-1.426-4.889-1.767-.711-.174-1.798-.375-2.023-.375h-.121v4.819l.048 4.819c.142 0 1.315.168 1.794.258 1.399.261 3.117.787 4.848 1.484l1.024.428a.38.38 0 0 0 .12.049c.021.001.032-2.102.025-4.672zM4.415 30.365l-1.375-.532-.467-.179v-1.59-1.59l.114.029c.062.016.715.278 1.451.582l1.337.553.013 1.543c.013 1.447.008 1.543-.076 1.54-.049-.002-.498-.162-.997-.356zM.694 29.178L0 28.953v-1.738l.02-1.738c.017 0 .876.294 1.33.456l.164.058v1.711c0 1.338-.014 1.71-.063 1.706-.035-.003-.375-.106-.757-.229zm9.852-10.993v-1.539h1.463 1.463v1.539 1.539h-1.463-1.463zm-2.649 1.016l-1.312-.312-.013-1.55c-.007-.852-.001-1.55.014-1.55s.566.126 1.224.279l1.437.332.24.053v1.535 1.535l-.139-.005c-.076-.003-.729-.145-1.451-.317zm-3.936-1.364l-1.362-.522-.013-1.596c-.007-.878.002-1.596.021-1.596a49.17 49.17 0 0 1 1.464.588l1.429.588v1.531c0 1.426-.006 1.531-.088 1.53-.049-.001-.701-.237-1.451-.524zM.669 16.815L0 16.587v-1.711c0-1.335.014-1.712.063-1.712.035-.001.375.107.757.239l.694.24v1.704c0 1.591-.006 1.704-.088 1.7-.049-.002-.389-.106-.757-.231zm9.877-10.992V4.284h1.463 1.463v1.539 1.539h-1.463-1.463zM7.897 6.838l-1.312-.312-.013-1.55c-.007-.869.006-1.55.031-1.55s.609.134 1.3.297l1.42.332.164.035v1.535V7.16l-.139-.005c-.076-.003-.729-.145-1.451-.317zM3.961 5.474l-1.362-.522-.013-1.596c-.007-.878.006-1.596.03-1.596s.654.252 1.401.561l1.421.586c.049.019.063.379.063 1.559 0 1.428-.006 1.533-.088 1.532-.049-.001-.701-.237-1.451-.524zM.669 4.452L0 4.225V2.514C0 1.179.014.802.063.802c.035 0 .375.104.757.231l.694.231v1.711c0 1.598-.006 1.711-.088 1.707-.049-.002-.389-.106-.757-.231z"/></svg>`)
+        
+        $("#dlurl").click(function () {
+              var hash = window.location.hash;
+    $(hash + " .relbg").css('opacity', '0').animate({
+        opacity: '1.0'
+    }, 1000);
+
+    $(hash).css('background-color', 'white')
+});
       });
+
   </script>
   
 </head>
 <body>
     <div class="container2"></div>
     <div class="container">
-<center><div class="chromebg"></div><h1>The <span class="bordertitle">Border</span> <span class="chrometitle">Chrome</span> Theme</h1>
-<font><i>A theme for Border that brings back the Chromier days.</i></font><br><br>
+<center><div class="chromebg"></div><h1 class="mastertitle">The <span class="bordertitle">Border</span> <span class="chrometitle">Chrome</span> Theme</h1>
+<font><i>A theme for Border that brings back the Chromier days.</i></font><br>
+<font style="font-size: 10px">Download <a id="dlurl" href='#bchromerel'>here</a></font><br><br><br><br>
 <font style="font-size: 18px">Why Chrome? Why the theme?</font><br>
 <font>Well, simply put, many people don't like the default Border UI.<br>
 As for Chrome, people in the Windows 96 Discord server mentioned it would be a nice theme<br> to make. I agree, 2008 Chrome has a superior UI to most browsers that we have today.</font></center>
+      <br><br><br>
+      <center>
+        <h1>Compare the theme with the reference version of Chrome:</h1>
+      <div class="img-comp-container">
+        <div class="img-comp-img">
+          <img src="./website/src1-4.png" width="959.5" height="451.5">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+          <img src="./website/src2.png" width="959.5" height="451.5">
+        </div>
+      </div>
+      <br><br><br><br>
+      <font style="font-size: 18px">Project stats:</font><br><br>
+      <img src="https://img.shields.io/github/v/release/plopilpy/borderChrome">
+      <img src="https://img.shields.io/github/stars/plopilpy/borderChrome?color=green">
+      <img src="https://img.shields.io/github/downloads/plopilpy/borderChrome/total">
+      <img src="https://img.shields.io/github/downloads/plopilpy/borderChrome/latest/total">
 
-    <table style="width:100%">
+
+    </center>
+      <script>
+      /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+      initComparisons();
+      </script>
+
+      <br><br><br><br><br>
+    <center><font style="font-size: 24px">Lastly, see these links for links to the project and for links to other projects related to this one!</font> </center>
+      <br>
+      <table style="width:100%">
         <tr>
           <td> </td>
           <td> </td>
           <td> </td>
         </tr>
         <tr>
-          <td class="blurbscontainer"><div class="releases" onclick="document.getElementById('relurl').click();"><div class="relbg"></div><div class="relcontainer"><a id="relurl" class="reltitle" href="https://github.com/plopilpy/borderChrome/releases/"><span class="githublogo"></span>Github releases</a><br>
+          <td class="blurbscontainer"><div class="releases" id="bchromerel" onclick="document.getElementById('relurl').click();"><div class="relbg"></div><div class="relcontainer"><a id="relurl" class="reltitle" href="https://github.com/plopilpy/borderChrome/releases/"><span class="githublogo"></span>Github releases</a><br>
             <font class="relbody">Click here to see the latest releases of the project.</font></div>
             </div></td>
-          <td class="blurbscontainer"><div class="releases" onclick="document.getElementById('borderurl').click();"><div class="relbg borderbg"></div><div class="relcontainer"><a id="borderurl" class="reltitle" href="https://onofficiel.github.io/border/"><span class="borderlogo"></span>Border Official Webpage</a><br>
+          <td class="blurbscontainer"><div class="releases" id="borderrel" onclick="document.getElementById('borderurl').click();"><div class="relbg borderbg"></div><div class="relcontainer"><a id="borderurl" class="reltitle" href="https://onofficiel.github.io/border/"><span class="borderlogo"></span>Border Official Webpage</a><br>
             <font class="relbody">Click here to view the official webpage for Border, the most powerful web browser for Windows 96.</font></div>
             </div></td>
-          <td class="blurbscontainer"><div class="releases" onclick="document.getElementById('borderurl').click();"><div class="relbg ninesixbg"></div><div class="relcontainer"><a id="url" class="reltitle" href="https://windows96.net/"><span class="ninesixlogo"></span>Windows 96</a><br>
+          <td class="blurbscontainer"><div class="releases" id="ninesixrel" onclick="document.getElementById('borderurl').click();"><div class="relbg ninesixbg"></div><div class="relcontainer"><a id="url" class="reltitle" href="https://windows96.net/"><span class="ninesixlogo"></span>Windows 96</a><br>
             <font class="relbody">Windows 96, one of the most powerful web OSes. Home of Border.</font></div>
             </div></td>
         </tr>
       </table>
-
 </div>
 </body>
 </html>

@@ -33,11 +33,11 @@
   }
   
   body {
-    background: url(src1-2.png);
-    height: 100%;
+    height: 160%;
     width: 100%;
     margin: 0;
-    overflow: hidden  }
+    overflow-y: scroll;
+    overflow-x: hidden;  }
   
   .container {
     margin: 0;
@@ -58,7 +58,7 @@
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: infinite;*/
-    height: 100%;
+    height: 160%;
     width: 100%;
     box-shadow: inset 0px 0px 600px rgb(0, 0, 0), inset 0px 0px 1000px rgb(40, 216, 172), inset 0px 0px 1200px rgb(40, 216, 172);
   }
@@ -83,6 +83,10 @@
     color: #4e2493;
   }
   
+.mastertitle{
+    margin-bottom: 0;
+}
+
   .releases {
     border: 2px ridge white;
     padding: 10px;
@@ -168,3 +172,42 @@
   .blurbscontainer{
       width: 25%;
   }
+
+
+
+  /*COMPARE IMAGE CODE BEGINS, THANKS W3SCHOOLS*/
+
+  .img-comp-container {
+    height: 451.5px; /*should be the same height as the images*/
+    position: relative;
+    filter: drop-shadow(15px 15px 20px #000);
+    transform: translateX(21%);
+  }
+  
+  .img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow:hidden;
+    box-sizing: border-box;
+  }
+  
+  .img-comp-img img {
+    display:block;
+    box-sizing: border-box;
+  }
+  
+  .img-comp-slider {
+    position: absolute;
+    z-index:9;
+    cursor: col-resize;
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    background-color: #2196F3;
+    opacity: 0.7;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  /*COMPARE CODE ENDS*/
